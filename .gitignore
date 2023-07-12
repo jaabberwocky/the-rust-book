@@ -1,0 +1,15 @@
+# Compiled files
+target/
+
+# These directories include test, build, and benchmark artifacts
+**/*.rs.bk
+
+# Dependency directories
+.cargo/
+
+# Rustup directories
+.rustup/
+
+# IDE files
+.idea/
+*.iml
