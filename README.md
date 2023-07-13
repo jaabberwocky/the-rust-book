@@ -6,6 +6,7 @@ This repository contains my work as I progress through [The Rust Programming Lan
 
 The repository is divided into directories that follow the structure of the book:
 
+- [Chapter 1 - Getting Started](./ch01/)
 - [Chapter 2 - Programming a Guessing Game](./ch02/)
 - [Chapter 3 - Common Programming Concepts](./ch03/)
 - [Chapter 4 - Understanding Ownership](./ch04/)
