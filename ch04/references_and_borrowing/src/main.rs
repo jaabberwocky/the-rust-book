@@ -19,7 +19,7 @@ fn main() {
     // is already a mutable reference
     let mut ss3 = SimpleStruct { num: 5 };
     {
-        //ss4 as a mutable ref ENDS at the end of this scope block
+        // ss4 as a mutable ref ENDS at the end of this scope block
         let ss4 = &mut ss3;
     }
     let ss5 = &ss3; // will not compile
