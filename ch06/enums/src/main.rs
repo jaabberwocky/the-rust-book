@@ -43,4 +43,23 @@ fn main() {
 
     let m2 = Message::Move { x: 1, y: 2 };
     m2.call();
+
+    // showcasing option values
+    //
+    let some_number = Some(5);
+    let some_char = Some('a');
+
+    let absent_number: Option<i32> = None;
+
+    let x: i8 = 5;
+    let y: Option<i8> = Some(5);
+
+    // expect 10, but won't compile
+    // let sum = x + y;
+
+    // handle both scenarios of both Some and None
+    match y {
+        Some(i) => println!("Sum of {} + {}: {}", x, i, x + i),
+        None => println!("No value for y"),
+    }
 }
