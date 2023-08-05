@@ -14,12 +14,18 @@ mod front_of_house {
     }
 }
 
-pub fn eat_at_restaurant() {
-    // absolute path
-    crate::front_of_house::hosting::add_to_waitlist();
+// alter to not have to use the entire path
+use crate::front_of_house::hosting;
 
-    // relative path
-    front_of_house::hosting::add_to_waitlist();
+pub fn eat_at_restaurant() {
+    // // absolute path
+    // crate::front_of_house::hosting::add_to_waitlist();
+
+    // // relative path
+    // front_of_house::hosting::add_to_waitlist();
+
+    // use the path we defined above
+    hosting::add_to_waitlist();
 }
 
 pub fn add(a: i32, b: i32) -> i32 {
